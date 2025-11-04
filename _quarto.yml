@@ -1,0 +1,104 @@
+project:
+  type: website
+
+
+resources:
+  - "files/"
+  - "!**/.quarto/**"
+  - "!**/_site/**"
+  - "!slides/"
+  - "!videos/scripts/"
+
+
+# project:
+#   type: website
+#   resources: 
+#     - "files/**"
+#     - "!**/.quarto/**"
+#     - "!**/_site/**"
+
+
+# website:
+#   title: "Site"
+#   navbar:
+#     left:
+#       - href: index.qmd
+#         text: Home
+
+# format:
+#   html:
+#     theme: default
+
+
+
+
+
+bibliography: files/social_network_class.bib
+csl: files/amj.csl
+
+
+website:
+  title: "Social Network and People in Projects"
+  description: "Understand and analyze social network data using R and RStudio"
+  #site-url: ""
+  navbar:
+    pinned: true
+    background: "#0080FE"
+    right:
+      - href: index.qmd
+        text: Home
+      - href: syllabus.qmd
+        text: Syllabus
+      - text: "Sessions"
+        file: sessions/index.qmd
+      
+  sidebar:
+    - title: "Classes and readings"
+      style: "docked"
+      search: false
+      background: light
+      contents:
+        - section: "Overview"
+          contents:
+            - sessions/index.qmd
+        - section: "Before you get started"
+          contents:
+            - text: "Installing R and RStudio"
+              file: sessions/0101-installingRandRStudio.qmd
+            - text: "Introduction to interactive sessions"
+              file: sessions/0102-introduction.qmd
+            - text: "Additional R resources"
+              file: sessions/0105-additionalRresources.qmd
+        - section: "Foundations"
+          contents:
+            - text: "1: Introduction to social networks in organisations"
+              file: sessions/01-session1.qmd
+            - text: "2: Collecting and visualising network data"
+              file: sessions/02-session2.qmd
+            - text: "3: Centrality measures, social capital, and brokerage"
+              file: sessions/03-.qmd
+            - text: "4: Communities, brokerage and diffusion"
+              file: sessions/04-.qmd
+        - section: "Applications"
+          contents:
+            - text: "5: Applications to management and project management"
+              file: sessions/05-.qmd
+
+  page-footer:
+    left: |
+      Content {{< fa copyright >}} by [{{< var instructor.name_no_title >}}]({{< var instructor.url >}}) <br>
+    right: |
+      Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
+      [View the source at {{< fa brands github >}} GitHub]({{< var course.github >}})
+
+format:
+  html:
+    theme:
+      - litera
+      - files/custom.scss
+    css: styles.css
+    toc: true
+    highlight-style: monokai
+
+
+
