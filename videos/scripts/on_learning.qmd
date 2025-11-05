@@ -1,0 +1,39 @@
+---
+title: On learning
+---
+
+# Setting the scene: how do you benefit from a university education?
+
+- Human capital (Becker)
+- Skill acquired lead to higher productivity and earnings
+- Also spillovers for society (civic engagement, health)
+- It is not just skills, but also socialization (learning to meet deadlines, cooperate with others, etc.)
+- Learning how to learn
+
+- Another theory suggests that much of the benefit comes from signalling (Spence).
+- Even if the student does not learn any skills, completing it can be a useful signal for employers if it is correlated with abilities that predict productivity.
+- In this model, higher education is a filter (Arrow) that sort people based on their abilities.
+
+So according to one theory, the main benefits is coming from the accumulation of human capital, while according to the other, it is mostly about sorting people according to their prior abilities.
+
+
+
+
+
+    -   Find the paper on lower salaries for people who graduated after the amount of courses was cut (Arteaga (2018), The effect of human capital on earnings: Evidence from a reform at Colombia's top university, Journal of Public Economics)
+    -   Explain why that means that all is not signal (ref Signal book) 
+    -   If actual learning matters, how can they maximise it
+    -   Go over a number of things about learning:
+        -   controlled difficulty
+        -   interleaving
+        -   spacing
+        -   retrieval practice
+        -   elaboration
+    -   Talk about how using AI for assignment can get in the way
+        -   it is not about not using it, but about using it to enhance your learning
+        -   it should not replace your thinking
+        -   it should not replace your effort
+    -   Truth is:
+        -   Can you pass the class not learning much because you use AI? Probably
+        -   Can you lose out on the lifelong benefits of what you would have learned? Also yes
+
