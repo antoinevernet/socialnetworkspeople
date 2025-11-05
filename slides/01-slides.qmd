@@ -1,0 +1,430 @@
+---
+title: Session 1---Introduction to Social Networks
+subtitle: Why networks matter for management and projects
+author: Antoine Vernet
+date: today
+format:
+  revealjs:
+    theme: [default, dark, slides.scss]
+    slide-number: true
+    toc: false
+    toc-depth: 2
+    overview: true
+    footer: Social Networks | Antoine Vernet
+    code-overflow: wrap
+    chalkboard: true
+    controls: true
+    progress: true
+    execute:
+      echo: false
+    view-distance: 2
+    preload-iframes: false
+    navigation-mode: linear
+bibliography: ../files/social_network_class.bib
+csl: ../files/amj.csl
+filters:
+  - webr
+  - shinylive
+---
+
+
+
+## Welcome
+
+```{dot}
+digraph G {
+  bgcolor="transparent"
+  node [fontcolor="white", color="white"]
+  edge [color="white"]
+  layout = "circo"
+  Why
+  Do
+  Networks
+  Matter [label="Matter?"]
+    Why -> Do;
+    Do -> Networks;
+    Networks -> Matter;
+}
+```
+
+
+::: notes
+Greet the class
+:::
+
+
+
+## Learning goals
+
+- Why should managers study networks. 
+- Understand basic concepts: nodes, edges, ties, paths, components. 
+- Appreciate the relevance of networks for management and projects.
+
+
+::: notes
+We’ll link concepts to decisions managers make: staffing, stakeholder engagement, innovation, risk, change.
+
+And to why they are useful in the context of projects
+:::
+
+
+## Why managers should care
+
+::::{.columns}
+
+::: {.column width="40%"}
+::: {.incremental}
+- Visibility
+- Execution
+- Innovation
+- Change & risk
+- Inclusion
+:::
+:::
+
+::: {.column width="60%"}
+![](./img/F7_4_Centola_p_113.png){fig-alt="Representation of a network with different numbers of brokers within it"}
+Source: @centola2018 
+:::
+
+::::
+
+::: notes
+Examples
+- Visibility: being seen at work by influential others
+- Execution: managing a team to deliver a project
+- Innovation: brokers combining ideas
+- Change & risk: identifying weak-points such as bridges and brokers early
+- Inclusion: spotting systematic differences in network building or network structure between groups
+
+The figure from @centola2018 shows how the presence of brokers in the network changes the network structure by creating clusters visible in the graph.
+
+We will discuss what brokerage is and how it can be useful at length later in the class.
+:::
+
+# Social Networks Beyond Organisations
+
+## Epidemiology
+
+::::{.columns}
+
+::: {.column width="60%"}
+- How diseases spread
+- Identify super-spreaders and vulnerable nodes
+- Design targeted interventions (vaccination, isolation)
+:::
+
+::: {.column width="40%"}
+![](./img/SIR_Easley_Kleinberg_p_573.png){fig-alt="A representation of the progression of an epidemic through a network"}
+Source: @easleykleinberg2010
+:::
+
+::::
+
+
+::: notes
+contagion and diffusion models are useful well beyond epidemiology (e.g., information spread, behavior adoption)
+
+We will revisit these later in the class.
+:::
+
+## Infrastructure & Transportation
+
+::::{.columns}
+
+::: {.column width="55%"}
+- Model connectivity of power grids, transport networks
+- Identify critical nodes and routes
+- Optimize for resilience
+:::
+
+::: {.column width="45%"}
+![Source: [Martin Grandjean](https://www.martingrandjean.ch/connected-world-air-traffic-network/)](./img/airports-world-network_martin_grandjean.png){fig-alt="Network of flight routes between airports around the world"}
+Source: [Martin Grandjean](https://www.martingrandjean.ch/connected-world-air-traffic-network/)
+:::
+
+::::
+
+::: notes
+air routes, internet infrastructure (routers, but also undersea cables)
+
+supply chains
+:::
+
+## Online Platforms
+
+
+::::{.columns}
+
+::: {.column width="60%"}
+- Modeling user connections for recommendation (Facebook, Twitter, LinkedIn, YouTube, TikTok, Netflix, Steam)
+- Search algorithms (Google PageRank)
+:::
+
+::: {.column width="40%"}
+![Bla](./img/recommendation_net.png.webp){fig-alt="A representation of a network model used for recommender systems"}
+Source: [Dunnhumby](https://medium.com/dunnhumby-data-science-engineering/network-models-for-recommender-systems-7f0d6d210ccf)
+:::
+
+::::
+
+
+## Counterterrorism and Security
+
+
+::::{.columns}
+
+::: {.column width="60%"}
+- mapping covert organisations
+- disrupt them effectively by targeting central actors
+:::
+
+::: {.column width="40%"}
+![](./img/10.1177_10439862211001606-fig1.jpg){fig-alt="A network representation of a network of cyberterrorism"}
+Source: [JCCJ](https://doi.org/10.1177/10439862211001606)
+:::
+
+::::
+
+
+## Innovation and Science
+
+
+::::{.columns}
+
+::: {.column width="60%"}
+- using patent & publication networks to map innovation ecosystems
+- innovation often emerges from recombination
+:::
+
+::: {.column width="40%"}
+![](./img/41587_2021_912_Fig1_HTML.png){fig-alt="A network representation of patents around COVID-19 vaccines"}
+Source: [Nature Biotechnology](https://www.nature.com/articles/s41587-021-00912-9)
+:::
+
+::::
+
+
+# Organizational Networks
+
+::: notes
+Going back to why managers should care
+:::
+
+## Visibility
+
+. . . 
+
+Surface informal communication & influence patterns hidden from org charts. 
+
+
+
+## Execution
+
+. . .
+
+Identify critical connectors, bottlenecks, and single points of failure in delivery chains.
+
+## Innovation
+
+. . .
+
+Spot bridges across teams that spark ideas; reduce insular silos.
+
+## Change & risk
+
+. . .
+
+Map trusted messengers for adoption; monitor key-person risk.
+
+## Inclusion
+
+. . .
+
+Detect peripheral employees; design interventions for access & belonging.
+
+
+## What is SNA?
+
+Social Network Analysis (SNA) studies relationships among actors (people/teams/orgs) to explain outcomes like performance, innovation, and resilience.
+
+::: {.incremental}
+- Visualize patterns (graphs)
+- Measure structure (metrics)
+- Intervene to improve outcomes (design)
+:::
+
+::: notes
+Bridge: visuals are not the end—metrics link structure to outcomes.
+:::
+
+
+
+## Basic terminology (1/3)
+
+Nodes & edges 
+
+- Nodes = actors (people, teams, orgs)
+- Edges/ties = relationships (communication, advice, collaboration)
+- Directed vs undirected (who nominates whom?)
+- Weighted vs unweighted (strength/frequency)
+
+##
+::::: columns
+::: column
+Undirected (unweighted)
+```{mermaid}
+graph LR 
+A((A))---B((B)) 
+A---C((C)) 
+B---C 
+C---D((D))
+```
+:::
+
+::: column
+Directed (weighted)
+
+```{mermaid}
+graph LR 
+A((A))-->|"3 msgs/wk"|B((B)) 
+B-->|"1"|C((C))
+C-->|"5"|A
+```
+:::
+:::::
+
+::: notes
+Design matters: tie definition should align with the managerial question.
+:::
+
+
+
+## Basic terminology (2/3)
+
+- Ego vs Whole networks
+- Ego network: ties around a focal actor (“ego”)
+- Whole network: ties among a bounded set (team, unit)
+
+Open vs Closed networks
+- Open: diverse, many external bridges
+- Closed: dense, cohesive cluster
+
+::: notes
+Pros/cons: open = novelty; closed = trust & coordination.
+:::
+
+
+
+## Basic terminology (3/3)
+
+Core properties
+- Density: share of realized ties among all possible ties
+- Diameter: longest shortest path in the network
+- Centrality (who matters, how?)
+- Degree (connections)
+- Betweenness (bridging control)
+- Closeness (reach/efficiency)
+- Eigenvector/PageRank (connected to the well‑connected)
+
+::: notes
+Remind: choose metrics driven by theory, not by availability.
+:::
+
+
+
+## Key theories for managers (1/3)
+
+Strength of Weak Ties — Granovetter
+- Weak ties often bridge groups and bring novel information
+- Strong ties offer support but less novelty
+
+Implications
+- Hire & rotate to create non‑redundant contacts
+- Encourage cross‑team communities/practices
+
+::: notes
+Use job search and innovation examples; caution: too many weak ties can dilute commitment.
+:::
+
+
+
+## Key theories for managers (2/3)
+
+Structural Holes — Burt
+- Gaps between groups with complementary info
+
+Brokers spanning holes gain advantages:
+- Access to non‑redundant information
+- Control over information flows
+- Creativity via recombination
+
+Implications: Identify brokers; avoid over‑reliance on a single broker (burnout/risk).
+
+::: notes
+Broker ≠ always hero; design robust brokerage via multiple bridges.
+:::
+
+
+
+## Key theories for managers (3/3)
+
+Small‑world phenomenon
+- Short path lengths (“six degrees”) + local clustering
+- Enables rapid reach without losing cohesion
+
+Implications: Build shortcut ties across clusters (guilds, rotations, liaison roles).
+
+::: notes
+Small-worlds emerge naturally; we can nudge structure with light‑touch design.
+:::
+
+
+
+## Steps from data to change
+
+1. Visualize: map the network (survey, comms metadata, co‑authorship, tickets) 
+2. Measure: align metrics to the managerial question 
+3. Diagnose: bottlenecks, isolates, fragile bridges 
+4. Intervene: teaming, mentoring, communities, role design 
+5. Evaluate: track before/after; avoid unintended consequences
+
+::: notes
+Include ethics: consent, privacy, governance; use aggregated insights where possible.
+:::
+
+
+
+
+## Common pitfalls
+
+- Over‑interpreting pretty pictures without metrics
+- Assuming correlation = causation
+- Ignoring boundary definitions (who’s in/out)
+- Missing temporal dynamics (networks change!)
+- Neglecting ethics & privacy
+
+
+
+# Thank you
+
+
+
+## Appendix: handy definitions
+
+- Path: sequence of unique nodes connected by edges
+- Geodesic: shortest path between two nodes
+- Component: maximally connected subgraph
+- Assortativity: similarity of connected nodes on a trait
+- Homophily: tendency to connect to similar others
+
+
+
+## Appendix: sample survey items
+
+- Advice network: “In the last month, who did you go to for help with [topic]?”
+- Trust network: “Whose judgement do you trust on [topic]?”
+- Collaboration network: “Which teams did you collaborate with on [project] in Q3?”
+
+
+## References
