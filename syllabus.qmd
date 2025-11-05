@@ -1,0 +1,190 @@
+---
+title: "Syllabus"
+---
+
+::::: {.grid .course-details .course-details-smaller}
+::: {.g-col-12 .g-col-sm-6 .g-col-md-6}
+### Instructor
+
+-   [{{< fa user >}}]{.fa-li} [{{< var instructor.name >}}]({{< var instructor.url >}})
+-   [{{< fa envelope >}}]{.fa-li} <a href='mailto:{{< var instructor.email >}}'>{{< var instructor.email >}}</a>
+-   [{{< iconify fa6-brands bluesky size=1.1em title='Bluesky' >}}]{.fa-li} [Bluesky]({{< var instructor.bluesky >}})
+:::
+
+::: {.g-col-12 .g-col-sm-6 .g-col-md-6}
+### Course details
+
+-   [{{< fa calendar >}}]{.fa-li} {{< var course.days >}}
+-   [{{< fa calendar-alt >}}]{.fa-li} {{< var course.dates >}}
+-   [{{< fa clock >}}]{.fa-li} {{< var course.time >}}
+-   [{{< fa location-dot >}}]{.fa-li} {{< var course.location >}}
+:::
+:::::
+
+# Course Objectives
+
+The study of social networks has been a fruitful area of research in a number of disciplines, such as sociology, management, economics, physics, and computer science. We have learned much about the effects of network structures and dynamics on group and individual behaviors. Flipping our perspective, we have also learned a lot about how individual behaviors and interactions give rise to network structures and dynamics. One core idea behind social network analysis is that individuals (or organisations) do not act in a vacuum and that to better understand their behavior, it is necessary to move beyond considering only their attributes to also consider the web of relationships they are embedded in. This is crucial in contexts where interdependence, and coordination are central concerns.
+
+One such context is that of complex projects, be they construction mega projects, large engineering projects, software development projects, or other types of projects. These have increasingly been a key organizational form in the contemporary economy. But what really is a project? If we pare down a project to its essential elements, it is a temporary endeavor undertaken to create a unique product, service, or result. This is it, no other feature necessary. They are, however, often complex, uncertain, and requiring coordination among diverse stakeholders. Projects are also increasingly being used as a way for organisations to structure their work and achieve their strategic objectives.
+
+Considering this, using a social network perspective to study project organisations is highly relevant, so it is not surprising that, over the past three decades, the social network approach to the study of project and enterprise organisations has greatly expanded. The success of a project often depends on the quality of the relationships and interactions among team members, stakeholders, and other actors involved in the project. Social networks have been used fruitfully to understand team collaboration, organisational learning, innovation, the use of power and influence in groups, how companies form strategic partnerships and many other areas. This module aims to help you develop an understanding of the emergent interdisciplinary area of social networks by drawing upon social, organisational and management perspectives.
+
+# Learning Objectives
+
+Through the sessions in this class, you will:
+
+-   gain a sound theoretical grounding in the main concepts of social networks drawing upon sociology, economics, and management
+-   be introduced to the main areas of research and application in social networks that are relevant to projects, supplemented by case study material.
+-   be introduced to software (e.g. R) for describing, modelling and visualizing social networks.
+-   be equipped with the skills to evaluate and integrate social network theory and practice in a wide range of situations.
+
+# Learning Outcomes
+
+At the end of the module, you will be able to:
+
+-   discuss the concept of social networks in project and enterprise organizations, the various types of relationships that can occur within them, their external context and how they are managed.
+-   critically evaluate research and application of the social network approach in the study of project and enterprise organizations informed by leading edge research and practice in the field.
+-   relate and apply key social network theories to selected case studies.
+-   collect, model and visualize network data using software (e.g. R), analyse network structures using descriptive measures, evaluate findings and communicate results effectively.
+
+# Course Material
+
+The course material consists of notes, slides, readings, and videos. All of it is available on this website and through Moodle.
+
+# R and RStudio
+
+The class has a theoretical and a practical component. For the practical component, we will analyze real data using R and RStudio. There is no requirement that you have used these tools prior to the class, but if you have not, I have prepared some resources to help you get started ahead of the first class session. These resources are under the [Before you get started](???) section when you access the sessions.
+
+# Course overview
+
+In this class, we explore how social network analysis can be applied to understand and improve organizational dynamics. We cover key concepts in graph theory, learn how to map and analyze networks using software tools, and examine case studies that illustrate the practical implications of network structures in real-world organizations.
+
+## Session 1 – Introduction to social networks in organisations
+
+**Learning goals**
+
+-   Motivate why managers should study networks.
+-   Understand basic concepts: nodes, edges, ties, paths, components.
+-   Appreciate the relevance of networks for management and projects.
+
+**Key ideas**
+
+-   What is SNA and why it matters: visualizing communication patterns, influential actors, diffusion.
+-   Basic terminology:
+    -   **Nodes & edges**; directed/undirected; weighted/unweighted.
+    -   **Ego vs whole networks**.
+    -   **Open vs closed networks**.
+    -   Core properties: **density**, **diameter**, **centrality**.
+-   Theories of managerial relevance:
+    -   **Strength of weak ties** (Granovetter): weak ties bridge groups and bring novel information; strong ties offer support but little novelty.
+    -   **Structural holes** (Burt): gaps between groups with complementary info; brokers who span holes gain advantages (non‑redundant information, control of flows).
+    -   **Small‑world phenomenon**: short path lengths (“six degrees”) enable rapid reach.
+
+**Readings (before class)**
+
+-   Jackson, *The Human Network*, Ch. 1.
+
+## Session 2 – Collecting and visualising network data
+
+**Learning goals**
+
+-   Identify data sources and study designs.
+-   Structure data for analysis.
+-   Visualise networks clearly and ethically.
+
+**Key ideas**
+
+-   **Data sources & designs**
+    -   *Primary*: whole‑network census and ego‑network surveys; interviews.
+    -   *Secondary*: org records (emails/project tools), public reports, websites.
+    -   Ethics: consent, anonymity, minimising harm and misuse.
+    -   Response‑rate needs for whole‑network surveys (\~80% as a rule of thumb).
+-   **Data structures**
+    -   Edge lists vs adjacency matrices; attributes for nodes/edges.
+    -   One‑mode vs two‑mode (bipartite) networks (e.g., people ↔ projects).
+-   **Visualisation principles**
+    -   Layouts (force‑directed, circular, geographic), size/colour encodings, reducing clutter, legends, captioning managerial insights.
+
+**Hands‑on** - Load a prepared CSV edge list into R, build a graph, compute basic descriptive statistics (\|V\|, \|E\|, density, degree distribution) and create a table with this statistics.
+
+**Readings (before class)**
+
+-   Jackson, *Social and Economic Networks*, Ch. 2 (representation).
+-   ??? from Healy or ? Maybe from ggraph docs
+
+## Session 3 – Centrality measures, social capital, and brokerage
+
+**Learning goals**
+
+-   Compute and interpret centrality measures.
+-   Link centrality to social capital and managerial outcomes.
+
+**Key ideas**
+
+-   **Degree centrality**: number of direct contacts (in/out for directed networks). Managerial reading: popularity, workload, exposure.
+-   **Betweenness centrality**: how often a node lies on shortest paths; identifies **brokers/gatekeepers** that connect clusters.
+-   **Closeness centrality**: how quickly a node can reach others; identifies **efficient broadcasters**.
+-   **Eigenvector**: connections to **influential neighbours**; captures “influencers of influencers.”
+-   **Social capital & brokerage**
+    -   Information capital (reachability/closeness), brokerage capital (betweenness/structural holes), coordination/leadership capital (position to mobilise others), bridging capital (links across groups).
+    -   Evidence from Burt: brokerage correlates with idea value, pay, evaluations and promotion odds.
+    -   Trade‑offs: brokers gain access/control but face coordination and maintenance costs.
+
+**Hands‑on**
+
+-   Using the Session‑2 network, compute degree/betweenness/closeness/eigenvector (or PageRank). Identify critical connectors and bottlenecks. Experiment by removing a high‑betweenness node and observe fragmentation.
+
+**Readings (before class)**
+
+-   Jackson, *Social and Economic Networks*, Ch. 2–3 (centrality).
+-   Burt, *Structural Holes* (selected pages) or a recent paper on brokerage
+-   ??? another paper on social capital
+
+## Session 4 – Communities, brokerage and diffusion
+
+**Learning goals**
+
+-   Detect communities/silos and interpret their impact.
+-   Measure brokerage beyond betweenness (effective size, constraint).
+-   Understand diffusion of information and behavior in networks.
+
+**Key ideas**
+
+-   **Community detection**
+    -   Modularity, Girvan–Newman, Louvain; managerial reading of clusters (departments, functions, vendor ecosystems).
+-   **Structural holes** (Burt) revisited
+    -   **Effective size**: non‑redundant contacts.
+    -   **Constraint**: extent to which an ego’s ties are interconnected (high constraint = “network straitjacket”).
+-   **Diffusion & contagion**
+    -   *Simple contagion*: one exposure can spread (rumours, pathogens).
+    -   *Complex contagion* (Centola): multiple, reinforcing exposures typically needed for adoption of costly/controversial behaviors; weak ties/small‑world shortcuts can **aid simple** but **slow complex** change unless you seed multiple clusters.
+    -   Threshold models and the role of clustering and redundancy for reinforcement.
+
+**Hands‑on**
+
+-   Run community detection, label clusters, then compute effective size/constraint per node. Simulate simple vs complex contagion on lattice/small‑world/random networks; compare time‑to‑adoption and final reach.
+
+**Readings (before class)**
+
+-   Centola, *How Behavior Spreads* (selected chapters).
+-   Jackson, *Social and Economic Networks*, Ch. 4–6 (diffusion/strategic interaction).
+-   Overview article on complex contagion and a short Centola/Macy summary.
+
+## Session 5 – Applications to management and project management
+
+**Learning goals**
+
+-   Apply SNA to diagnose organisational/project issues.
+-   Translate metrics into interventions and governance choices.
+-   Communicate findings to non‑technical stakeholders.
+
+**Applications**
+
+-   **Organisational diagnostics**
+    -   Identify silos and hidden influencers; design onboarding for isolates; de‑risk single points of failure; knowledge‑transfer planning.
+-   **Project management / stakeholder networks**
+    -   Map stakeholders (PM, work‑package leads, suppliers, clients) and compute centrality; identify overloaded actors (high degree), bottlenecks (high betweenness), and champions (high closeness/eigenvector).
+    -   Use network views for communication plans, risk registers and escalation paths.
+-   **Interventions**
+    -   Add bridging ties; rotate liaison roles; create communities of practice; reduce over‑centralisation; set KPIs that reward cross‑team collaboration.
+    -   Ethics & governance: privacy, transparency, non‑punitive framing of SNA results.

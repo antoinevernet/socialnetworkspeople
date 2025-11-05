@@ -1,0 +1,26 @@
+author: Antoine Vernet
+
+instructor:
+  name: Dr. Antoine Vernet
+  name_no_title: Antoine Vernet
+  email: a.vernet@ucl.ac.uk
+  url: "https://www.antoinevernet.com"
+  bluesky: "https://bsky.app/profile/antoinevernet.bsky.social"
+  github: antoinevernet
+
+course:
+  github: "https://www.github.com/antoinevernet/socialnetworkspeople"
+  url: ""
+  copyright_year: "2025"
+  days: "Tuesdays"
+  time: "10 am - 1 pm"
+  location: "Taviton Street, Bloomsbury Campus"
+  dates: "January–February 2026"
+
+university:
+  name: University College London
+  url: "https://www.ucl.ac.uk"
+
+school:
+  name: The Bartlett School of Sustainable Construction
+  url: "https://www.ucl.ac.uk/bartlett/construction"
