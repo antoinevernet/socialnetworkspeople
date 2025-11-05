@@ -215,7 +215,12 @@ Going back to why managers should care
 
 . . . 
 
-Surface informal communication & influence patterns hidden from org charts. 
+The org chart does not tell the whole story
+
+. . .
+
+Being seen by influential other is key for career progression
+
 
 
 
@@ -225,11 +230,18 @@ Surface informal communication & influence patterns hidden from org charts.
 
 Identify critical connectors, bottlenecks, and single points of failure in delivery chains.
 
+managing a team to deliver a project
+
+
 ## Innovation
 
 . . .
 
 Spot bridges across teams that spark ideas; reduce insular silos.
+
+- Innovation: brokers combining ideas
+
+
 
 ## Change & risk
 
@@ -237,11 +249,15 @@ Spot bridges across teams that spark ideas; reduce insular silos.
 
 Map trusted messengers for adoption; monitor key-person risk.
 
+identifying weak-points such as bridges and brokers early
+
 ## Inclusion
 
 . . .
 
 Detect peripheral employees; design interventions for access & belonging.
+
+spotting systematic differences in network building or network structure between groups
 
 
 ## What is SNA?
@@ -255,7 +271,9 @@ Social Network Analysis (SNA) studies relationships among actors (people/teams/o
 :::
 
 ::: notes
-Bridge: visuals are not the end—metrics link structure to outcomes.
+visuals are not the end
+
+metrics link structure to outcomes.
 :::
 
 
@@ -328,7 +346,7 @@ Core properties
 - Eigenvector/PageRank (connected to the well‑connected)
 
 ::: notes
-Remind: choose metrics driven by theory, not by availability.
+Remind: choice of metrics driven by theory, not by availability.
 :::
 
 
@@ -351,7 +369,8 @@ Use job search and innovation examples; caution: too many weak ties can dilute c
 
 ## Key theories for managers (2/3)
 
-Structural Holes — Burt
+Structural Holes 
+— Burt
 - Gaps between groups with complementary info
 
 Brokers spanning holes gain advantages:
@@ -376,7 +395,7 @@ Small‑world phenomenon
 Implications: Build shortcut ties across clusters (guilds, rotations, liaison roles).
 
 ::: notes
-Small-worlds emerge naturally; we can nudge structure with light‑touch design.
+Small-worlds emerge naturally; maybe we can nudge structure with light‑touch design.
 :::
 
 
