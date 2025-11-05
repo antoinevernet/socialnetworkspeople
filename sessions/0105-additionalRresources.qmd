@@ -1,0 +1,12 @@
+---
+title: "Additional R resources"
+---
+
+
+
+I recommend going through the [R for Data Science](https://r4ds.had.co.nz/) book by Garrett Grolemund and Hadley Wickham. It is a great resource for learning the basics of R and RStudio.
+
+
+Short introduction to Social Network Analysis by Martin Grandjean
+https://www.martingrandjean.ch/introduction-to-social-network-analysis/
+
