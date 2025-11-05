@@ -1,0 +1,59 @@
+
+
+/*-- scss:defaults --*/
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #ddd !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+
+// Home page stuff
+.title-block {
+  margin: 1em 0;
+  border-bottom: 3px solid $gray-200;
+  padding-bottom: 1em;
+}
+
+.course-details {
+  margin: 0 0 1em;
+  border-bottom: 3px solid $gray-200;
+  padding-bottom: 1em;
+}
+
+.course-details h3 {
+  margin-top: 0;
+}
+
+.course-title {
+  font-size: 3.5rem;
+  border-bottom: 3px solid $gray-200;
+  margin-top: 0;
+  padding-bottom: 0.2em;
+}
+
+.course-subtitle {
+  font-size: 1.7rem;
+}
+
+.course-meta {
+  font-size: 1.2rem;
+  color: $gray-600;
+}
+
+// I copied this from Andrew Heiss's dataviz class who copied it from Font Awesome's .fa-ul since there's no way to add a class
+// to a pandoc list
+.course-details ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 1.5em);  // Was originally 2.5
+  padding-left: 0;
+}
+.course-details ul > li {
+  position: relative;
+}
