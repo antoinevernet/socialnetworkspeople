@@ -4,7 +4,7 @@ title: "Sessions"
 
 Each class session consists of notes, slides, readings, and videos. You should skim the readings before the in-person class session. The slides will be used in class, so you do not have to read them ahead of time, but feel free to. Most of the sessions are accompanied by interactive lessons that aim to help you learn how to use R and RStudio for social network analysis.
 
-In addition, if you have never used R and RStudio before, I have prepared some resources to help you get started ahead of the first class session. These resources are under the [Before you get started](???) section on the sidebar.
+In addition, if you have never used R and RStudio before, I have prepared some resources to help you get started ahead of the first class session. These resources are under the Before you get started section on the sidebar.
 
 ```{=html}
 <!--

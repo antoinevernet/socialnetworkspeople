@@ -219,7 +219,11 @@ The org chart does not tell the whole story
 
 . . .
 
-Being seen by influential other is key for career progression
+Networks reveal the informal structure of the organisation
+
+. . . 
+
+Activity in the advice network leads to being perceived as influential @balkundikilduffharris2011
 
 
 
@@ -231,6 +235,8 @@ Being seen by influential other is key for career progression
 Identify critical connectors, bottlenecks, and single points of failure in delivery chains.
 
 managing a team to deliver a project
+
+
 
 
 ## Innovation

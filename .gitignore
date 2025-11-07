@@ -11,3 +11,8 @@
 **/*.quarto_ipynb
 
 socialnetworkspeople.Rproj
+
+slides_cuts.qmd
+
+slides_tech_demo.qmd
+
