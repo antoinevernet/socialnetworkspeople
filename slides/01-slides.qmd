@@ -236,7 +236,7 @@ Map bottlenecks, and single points of failure in delivery chains
 
 . . .
 
-Cohesive networks can help increase motivation to share knowledge (Reagans and McEvily 2003)
+Cohesive networks can help increase motivation to share knowledge @reagansmcevily2003
 
 . . . 
 
