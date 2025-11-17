@@ -10,3 +10,41 @@ I recommend going through the [R for Data Science](https://r4ds.had.co.nz/) book
 Short introduction to Social Network Analysis by Martin Grandjean
 https://www.martingrandjean.ch/introduction-to-social-network-analysis/
 
+
+
+Other sources
+
+[Causal inference in R](https://www.r-causal.org)
+
+[DevOps for Data Science](https://do4ds.com) https://www.andrewheiss.com/blog/
+
+https://github.com/Mixtape-Sessions/Causal-Inference-2 https://github.com/Mixtape-Sessions/Causal-Inference-1 https://mixtape.scunning.com/teaching_tools
+
+https://mine-cetinkaya-rundel.github.io/r4ds-solutions/data-visualize.html
+
+-   the ggplot2 book https://ggplot2-book.org/preface-3e
+-   Tidy modelling with R https://www.tmwr.org
+-   Hands-on Programming with R https://rstudio-education.github.io/hopr/
+-   https://clauswilke.com/dataviz/
+
+Advanced material
+
+https://adv-r.hadley.nz/introduction.html
+
+https://r-pkgs.org/whole-game.html
+
+https://happygitwithr.com
+
+https://github.com/paulgp/applied-methods-phd https://paulgp.github.io/2024/06/24/llm_talk.html
+
+[Data Visualisation class](https://datavizf24.classes.andrewheiss.com)
+
+[Statistical Inference via Data Science: A ModernDive into R and the Tidyverse](https://moderndive.com/v2/)
+
+
+# Mapping
+
+https://cengel.github.io/R-spatial/
+
+https://r.geocompx.org
+

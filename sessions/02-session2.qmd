@@ -1,0 +1,39 @@
+---
+title: "Session 2: Collecting and visualising network data"
+---
+
+::: {.callout-note icon=false}
+
+# Objectives
+
+## Learning goals
+
+-  
+
+## Key ideas
+
+-   
+
+## Readings (before class)
+
+-   {{< fa book >}} ....
+
+## Slides
+
+The slides for this session are below, you can either open them in your browser or download them as a PDF.
+
+
+```{r show-slide-tabs, echo=FALSE, results="asis"}
+slide_buttons <- function(slide_id) {
+  glue::glue('<p class="text-center buttons"><a class="btn btn-danger" target="_blank" href="{slide_id}.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View all slides in new window</a> <a class="btn btn-danger" target="_blank" href="{slide_id}.pdf" role="button"><i class="fa-solid fa-file-pdf"></i> Download PDF of all slides</a></p>')
+}
+
+slide_buttons("/slides/02-slides")
+
+```
+:::
+
+
+
+## Introduction
+
