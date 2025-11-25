@@ -48,3 +48,7 @@ https://cengel.github.io/R-spatial/
 
 https://r.geocompx.org
 
+# Interactive network of contracts
+
+https://www.sophie-e-hill.com/slides/my-little-crony
+

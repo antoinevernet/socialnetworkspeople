@@ -21,6 +21,7 @@ So according to one theory, the main benefits is coming from the accumulation of
 
 
     -   Find the paper on lower salaries for people who graduated after the amount of courses was cut (Arteaga (2018), The effect of human capital on earnings: Evidence from a reform at Colombia's top university, Journal of Public Economics)
+    https://www.sciencedirect.com/science/article/abs/pii/S0047272717301809?casa_token=4N7ZfxD6eRgAAAAA:gIRj7qXhQ1hR8H34aIqP1-o6bSuVACfr8iM0zjyccLNpmMOrEbOCx9WG8avj4pwryHBLbmTPtA
     -   Explain why that means that all is not signal (ref Signal book) 
     -   If actual learning matters, how can they maximise it
     -   Go over a number of things about learning:
@@ -41,3 +42,5 @@ So according to one theory, the main benefits is coming from the accumulation of
 In Assassin's Creed 1, once you have visited Accra twice, Al Mualim tells you: "Information learned is more valuable than information given"
 
 Add the stuff from Biasi and ? on frontier knowledge and how it influences both learning and earnings
+
+Maybe: https://www.jstor.org/stable/j.ctvjghth8?if_data=e30%3D as a counterpoint to the Case Against Education?

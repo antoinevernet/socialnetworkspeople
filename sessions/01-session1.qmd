@@ -1,0 +1,178 @@
+---
+title: "Session 1: Introduction to Social Networks in Organisations"
+---
+
+::: {.callout-note icon="false"}
+# Objectives
+
+## Learning goals
+
+-   Motivate why managers should study networks.
+-   Understand basic concepts: nodes, edges, ties, paths, components.
+-   Appreciate the relevance of networks for management and projects.
+
+## Key ideas
+
+-   What is SNA and why it matters: visualizing communication patterns, influential actors, diffusion.
+-   Basic terminology:
+    -   **Nodes & edges**: directed/undirected; weighted/unweighted.
+    -   **Ego vs whole networks**.
+    -   **Open vs closed networks**.
+    -   Core properties: **density**, **diameter**, **centrality**.
+-   Theories of managerial relevance:
+    -   **Strength of weak ties** (Granovetter): weak ties bridge groups and bring novel information; strong ties offer support but little novelty.
+    -   **Structural holes** (Burt): gaps between groups with complementary info; brokers who span holes gain advantages (non‑redundant information, control of flows).
+    -   **Small‑world phenomenon**: short path lengths (“six degrees”) enable rapid reach.
+
+## Readings (before class)
+
+-   {{< fa book >}} Jackson, *The Human Network*, Ch. 1.
+
+## Slides
+
+The slides for this session are below, you can either open them in your browser or download them as a PDF.
+
+```{=html}
+<div>
+<script type="application/javascript">
+
+function resizeIFrameToFitContent( iFrame ) {
+
+   iFrame.width  = (document.getElementById("quarto-document-content").clientWidth *0.9);
+   iFrame.height  = (document.getElementById("quarto-document-content").clientWidth * 0.5)
+}
+
+window.addEventListener('DOMContentLoaded', function(e) {
+
+    var iFrame = document.getElementById( 'quartoframe' );
+    resizeIFrameToFitContent( iFrame );
+    } );
+
+</script>
+
+<iframe class="slide-deck" id="quartoframe" src="../slides/01-slides.html"></iframe
+</div>
+```
+
+```{r show-slide-tabs, echo=FALSE, results="asis"}
+slide_buttons <- function(slide_id) {
+  glue::glue('<p class="text-center buttons"><a class="btn btn-danger" target="_blank" href="{slide_id}.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View all slides in new window</a> <a class="btn btn-danger" target="_blank" href="{slide_id}.pdf" role="button"><i class="fa-solid fa-file-pdf"></i> Download PDF of all slides</a></p>')
+}
+
+slide_buttons("/slides/01-slides")
+
+```
+:::
+
+## Introduction
+
+Social networks, and the underlying mathematics of graph theory, permeate so many aspects of our world that it is difficult to decide how best to start explaining their significance and introducing the tools to study them. What is the right balance between giving sufficient context and reserving enough time to cover the tools that allow us to extract insight from network data? This is a challenge that I will fail to resolve satisfactorily: I am selecting an entrance I find interesting, but it is by no means the only right way in.
+
+From the neural networks in our brains to the global web of airline routes, from the spread of diseases to the diffusion of innovations, networks provide a unifying framework for understanding complex systems of interconnected elements. In social contexts, networks shape how information flows, how influence is exerted, and how opportunities arise. In organizations, networks allow us to find out who collaborates with whom, how knowledge is shared, and how power is distributed beyond formal hierarchies.
+
+## Social Networks and Organizations
+
+Understanding networks has practical benefits for life in organizations. For individuals, being able to “read” networks helps in recognizing where influence lies beyond formal hierarchies---such as which colleagues are trusted brokers of information or which connections enable access to new opportunities. For teams, network insights can guide collaboration strategies, for example by identifying where bridging connections across departments might accelerate problem-solving or creativity. For organizations as a whole, mapping networks can reveal vulnerabilities---such as over-reliance on a single expert, or siloed groups that rarely exchange knowledge---so leaders can design more resilient and adaptive structures. Organizations also depend on networks of partners, suppliers, and customers; mapping interdependencies help create resilience in the face of shocks. The ability to apply network thinking provides an advantage in navigating both the formal and informal structures that shape organizational life.
+
+### At the individual level
+
+Social network research at the individual level has produced some importsnt findings that apply across contexts like career development, innovation, and leadership. In this section, I briefly outline some of the most important areas and results.
+
+The brokerage literature is probably the most well-known area of organizational social networks. The key finding of this literature is that occupying a brokerage position---linking otherwise disconnected others---provides access to diverse information. Ronald Burt’s describe brokerage positions in terms of an individual having many structural holes in their network @Burt1992. Brokers seems to be able to innovate, advance ideas, and build visibility in the organization better than non-brokers.
+
+The second major insight relevant to organizational life is the importance of weak ties. This is probably research that is even more broadly known that the brokerage literature, but less prominent within organizational research. Mark Granovetter’s work on the strength of weak ties highlights that while strong ties (close colleagues, trusted mentors) are essential for support and cooperation, weak ties (distant contacts, acquaintances) are disproportionately important for learning about new opportunities and spreading ideas across silos @granovetter1973. In organizational life, relying on weak ties when they are helpful, for example, for finding a new job, can be a tremendous advantage.
+
+Another important insight is that of the importance of centrality. Graph-theoretic measures such as degree, betweenness, and eigenvector centrality capture various types of prominence in a network. Central actors are more active, or more popular, or exert more influence. For individuals, understanding how centrality is gained (e.g., by being a connector across teams, or a go-to source of expertise) is crucial for career progression.
+
+While research highlighted that there are information advantages to be gain from occupying a network position rich in structural holes, evidence also suggests that clusters of strong ties foster trust, psychological safety, and efficient collaboration. For individuals, being part of cohesive groups can buffer stress and improve performance in certain context, but over-reliance on closed groups risks insularity (? Gargiulo??).
+
+Yet another important area in which social network research has been fruitful is knowledge sharing and learning. Organizations often depend on informal advice networks---who turns to whom for problem solving or technical expertise. Research in this area shows that informal networks frequently outperform formal reporting lines in predicting where knowledge flows. For individuals, visibility in advice networks is a sign of their good reputation and suggest that social capital gathered from providing advice can be used in other context as needed, for example by solliciting advice outside of ones area of expertise.
+
+Social network also have been key to further our understanding of contagion. While epidemiology seems far away from organisations' concerns, contagion in terms of behavior, or diffusion of idea, are key for organisations that want to perform well. Behaviors, attitudes, and emotions spread across networks in ways analogous to contagion. In organizations, this can mean enthusiasm, burnout, or cynicism diffusing through teams. Awareness of such processes can help individuals manage their own exposure and influence within groups.
+
+Finally, network research consistently finds that career opportunities---promotions, lateral moves, external job offers---depend not just on individual performance but also on network position. Building diverse, cross-level, and cross-boundary ties will enhance mobility and the ability to progress within an organization.
+
+### At the organizational level
+
+At the organizational level, social network research has produced insight about how patterns of inter-organizational ties shape innovation, performance, and survival. Below is a brief review of some of the most important areas and results that apply across contexts like R&D, mergers and acquisitions, and venture capital.
+
+Studying knowledge networks, for example in R&D settings, taught us that networks tend to show small-world structures, dense local clusters connected by a few long-range ties. This supports both deep specialization (within clusters) and cross-fertilization of ideas (across clusters). 
+As a result, firms embedded in such networks can innovate more effectively. Being a bridge between clusters (occupying brokerage positions) is especially valuable for generating breakthrough innovations. 
+Studies of biotech and semiconductor industries show that firms with both cohesive ties for trust and bridging ties for novelty perform best in knowledge-intensive settings.
+
+Studying alliances and strategic networks showed how centrality in inter-firm alliances (partnerships, joint ventures, licensing) predicts access to resources, legitimacy, and survival. 
+Peripheral firms risk isolation, while highly central firms benefit from visibility and influence, but must manage risks of overembeddedness (being locked into a single clique).
+
+In the context of mergers and acquisitions (M&A), research shows that network proximity increases the likelihood of M&A---firms that share board ties, industry associations, or alliances are more likely to acquire or merge. 
+Networks act as a mechanism of opportunity recognition and trust building. 
+However, redundant ties can reduce the value of acquisitions, since overlapping networks limit access to truly novel resources.
+
+In the context of entrepreneurial finance, or venture capital (VC), research shows that VC firms form syndication networks where reputation and trust circulate.
+Central VCs in these networks access better deals, attract top entrepreneurs, and influence industry standards.
+Entrepreneurs backed by well-connected VCs gain legitimacy and access to broader resources, improving survival and growth chances. 
+Research also shows that syndication spreads risk and accelerates scaling of new ventures.
+
+Corporate boards interlocks (where directors sit on multiple boards) create governance networks that diffuse practices, norms, and information about strategy or regulation.
+Such networks promote convergence in corporate governance and executive practices, but can also concentrate power and limit diversity of perspectives.
+
+The study of industry clusters suggests that regional clusters (e.g., Silicon Valley, biotech hubs) thrive due to dense, overlapping networks of firms, universities, investors, and regulators.
+Networks in such ecosystems lower transaction costs, accelerate knowledge flows, and drive collective innovation capacity.
+
+In financial and supply chain networks, dense interdependencies mean shocks spread quickly, i.e cascading failures in banking, or supply disruptions in manufacturing. 
+In such a context, understanding network topology is crucial for assessing systemic risk and designing resilient organisations.
+
+
+## Graph Theory: A High-Level Sketch
+
+Graph theory provides a flexible and general framework for representing and analyzing systems of interconnected elements. 
+At its core, it abstracts any set of entities (nodes) and their relationships (edges), allowing researchers to model phenomena ranging from the wiring of neural circuits to the architecture of the internet. 
+Because many natural and human-made systems can be understood as collections of relationships---physical connections, flows of information, friendship or advice---graph theory has become widely used across disciplines such as computer science, physics, and the social sciences. 
+It enables us to gain insight into the structure of these relationships and potential outcomes associated with these structures.
+
+Concepts like centrality, clustering, and path length provide tools to describe how well a system holds together, how quickly something spreads, or how vulnerable it may be to disruption.
+Networks can represent friendships in a karate club, trade routes between medieval cities, hyperlinks among web pages, or loans between financial institutions.
+When applied to social networks, graph theory allows tackling a number of otherwise difficult to model phenomena. Social life is inherently relational: people form ties of friendship, advice, collaboration, and conflict. Graph theory allows us to represent these ties and make the hidden architecture of social groups visible.
+For example, network analysis can reveal who is most central or influential in a group, which subgroups or cliques may form, and how information flows between different parts of an organization or society. 
+This means we can look beyond individual attributes to understand the patterns of interdependence that shape behavior and outcomes. 
+The theoretical power of graph concepts such as weak ties or structural holes has transformed how sociologists, management scholars, and political scientists think about collective phenomena like innovation, social capital, and collective action. 
+Graph theory helps us see how friendship, communication, and collaboration networks shape opportunities and constraints. 
+For example, strong ties often form dense clusters of trust and mutual support, while weak ties bridge across groups and bring in new information.
+The structural position of an individual in a network can determine influence, access to resources, and potential for conflict. 
+
+
+## The fundamentals of social networks
+
+### What is a network
+
+- **Nodes & edges**: directed/undirected; weighted/unweighted. 
+
+- **Ego vs whole networks**. 
+
+- **Open vs closed networks**. 
+
+- Core properties: **density**, **diameter**, **centrality**.
+
+## A rapid overview of key theories
+
+### Strength of weak ties
+
+### Structural holes
+
+### Closure and social capital
+
+### Small world phenomenon
+
+### Centrality and Power
+
+### Simmelian Ties
+
+### Cognitive Social Structures
+
+### Homophily
+
+### Triadic closure
+
+### Preferential attachment
+
+### Contagion/diffusion, simple or complex
+
