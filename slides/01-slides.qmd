@@ -215,15 +215,15 @@ Going back to why managers should care
 
 . . . 
 
-The org chart does not tell the whole story
+- The org chart does not tell the whole story
 
 . . .
 
-Networks reveal the informal structure of the organisation
+- Networks reveal the informal structure of the organisation
 
 . . . 
 
-Activity in the advice network leads to being perceived as influential @balkundikilduffharris2011
+- Activity in the advice network leads to being perceived as influential [@balkundikilduffharris2011]
 
 
 
@@ -232,15 +232,15 @@ Activity in the advice network leads to being perceived as influential @balkundi
 
 . . .
 
-Map bottlenecks, and single points of failure in delivery chains
+- Map bottlenecks, and single points of failure in delivery chains
 
 . . .
 
-Cohesive networks can help increase motivation to share knowledge @reagansmcevily2003
+- Cohesive networks can help increase motivation to share knowledge [@reagansmcevily2003]
 
 . . . 
 
-A high trust environment 
+- A high trust environment 
 
 
 
@@ -248,7 +248,9 @@ A high trust environment
 
 . . .
 
-Spot bridges across teams that spark ideas; reduce insular silos.
+- Spot bridges across teams that spark ideas; reduce insular silos.
+
+. . . 
 
 - Innovation: brokers combining ideas
 
@@ -258,18 +260,32 @@ Spot bridges across teams that spark ideas; reduce insular silos.
 
 . . .
 
-Map trusted messengers for adoption; monitor key-person risk.
+- Map trusted messengers for adoption
 
-identifying weak-points such as bridges and brokers early
+. . . 
+
+- Monitor key-person risk
+
+. . .
+
+- Identifying weak-points such as bridges and brokers
 
 ## Inclusion
 
 . . .
 
-Detect peripheral employees; design interventions for access & belonging.
+- Detect peripheral employees
 
-spotting systematic differences in network building or network structure between groups
+- Design interventions for access & belonging.
 
+- Spotting systematic differences in network building or network structure between groups
+
+::: notes
+
+For example, by gender (see how women create different networks than men, Uzzi, etc)
+:::
+
+# The Basics of Social Network Analysis
 
 ## What is SNA?
 
@@ -291,12 +307,39 @@ metrics link structure to outcomes.
 
 ## Basic terminology (1/3)
 
+
+::::{.columns}
+
+::: {.column width="60%"}
+
 Nodes & edges 
 
 - Nodes = actors (people, teams, orgs)
 - Edges/ties = relationships (communication, advice, collaboration)
 - Directed vs undirected (who nominates whom?)
 - Weighted vs unweighted (strength/frequency)
+
+:::
+
+::: {.column width="40%"}
+```{dot}
+
+digraph G {
+  bgcolor="transparent"
+  node [fontcolor="white", color="white"]
+  edge [color="white"]
+  A -> B;
+  A -> C;
+  B -> C;
+  C -> D;
+}
+
+```
+
+:::
+
+::::
+
 
 ##
 ::::: columns
