@@ -276,7 +276,11 @@ Going back to why managers should care
 
 - Detect peripheral employees
 
+. . .
+
 - Design interventions for access & belonging.
+
+. . .
 
 - Spotting systematic differences in network building or network structure between groups
 
@@ -310,7 +314,7 @@ metrics link structure to outcomes.
 
 ::::{.columns}
 
-::: {.column width="60%"}
+::: {.column width="50%"}
 
 Nodes & edges 
 
@@ -321,7 +325,7 @@ Nodes & edges
 
 :::
 
-::: {.column width="40%"}
+::: {.column width="50%"}
 ```{dot}
 
 digraph G {
@@ -337,7 +341,6 @@ digraph G {
 ```
 
 :::
-
 ::::
 
 
