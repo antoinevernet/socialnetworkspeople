@@ -309,25 +309,24 @@ metrics link structure to outcomes.
 
 
 
-## Basic terminology (1/3)
+## Basic terminology (1/3) {.smaller}
 
 
 ::::{.columns}
 
-::: {.column width="50%"}
+::: {.column width="40%"}
 
 Nodes & edges 
 
-- Nodes = actors (people, teams, orgs)
-- Edges/ties = relationships (communication, advice, collaboration)
+- Nodes are actors (people, teams, orgs)
+- Edges/ties are relationships (communication, advice, collaboration)
 - Directed vs undirected (who nominates whom?)
 - Weighted vs unweighted (strength/frequency)
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 ```{dot}
-
 digraph G {
   bgcolor="transparent"
   node [fontcolor="white", color="white"]
@@ -337,35 +336,59 @@ digraph G {
   B -> C;
   C -> D;
 }
-
 ```
-
 :::
 ::::
 
 
 ##
 ::::: columns
-::: column
-Undirected (unweighted)
-```{mermaid}
-graph LR 
-A((A))---B((B)) 
-A---C((C)) 
-B---C 
-C---D((D))
+::: {.column width="50%"}
+
+```{dot}
+//| fig-width: 5
+//| fig-height: 4
+graph G {
+    bgcolor="transparent"
+    node [fontcolor="white", color="white"]
+    edge [color="white"]
+    A [label="A", shape=circle];
+    B [label="B", shape=circle];
+    C [label="C", shape=circle];
+    D [label="D", shape=circle];
+
+    A -- B;
+    A -- C;
+    B -- C;
+    C -- D;
+}
 ```
+
+Undirected (unweighted)
+
 :::
 
-::: column
-Directed (weighted)
+::: {.column width="50%"}
 
-```{mermaid}
-graph LR 
-A((A))-->|"3 msgs/wk"|B((B)) 
-B-->|"1"|C((C))
-C-->|"5"|A
+
+```{dot}
+//| fig-width: 5
+//| fig-height: 4
+digraph G {
+    bgcolor="transparent"
+    node [fontcolor="white", color="white"]
+    edge [color="white", fontcolor="white"]
+    A [label="A", shape=circle];
+    B [label="B", shape=circle];
+    C [label="C", shape=circle];
+
+    A -> B [label="3 msgs/wk"];
+    B -> C [label="1"];
+    C -> A [label="5"];
+}
 ```
+
+Directed (weighted)
 :::
 :::::
 
@@ -377,13 +400,17 @@ Design matters: tie definition should align with the managerial question.
 
 ## Basic terminology (2/3)
 
-- Ego vs Whole networks
+Ego vs Whole networks
+
 - Ego network: ties around a focal actor (“ego”)
 - Whole network: ties among a bounded set (team, unit)
 
 Open vs Closed networks
+
 - Open: diverse, many external bridges
 - Closed: dense, cohesive cluster
+
+
 
 ::: notes
 Pros/cons: open = novelty; closed = trust & coordination.
@@ -394,6 +421,7 @@ Pros/cons: open = novelty; closed = trust & coordination.
 ## Basic terminology (3/3)
 
 Core properties
+
 - Density: share of realized ties among all possible ties
 - Diameter: longest shortest path in the network
 - Centrality (who matters, how?)
@@ -411,10 +439,12 @@ Remind: choice of metrics driven by theory, not by availability.
 ## Key theories for managers (1/3)
 
 Strength of Weak Ties — Granovetter
+
 - Weak ties often bridge groups and bring novel information
 - Strong ties offer support but less novelty
 
 Implications
+
 - Hire & rotate to create non‑redundant contacts
 - Encourage cross‑team communities/practices
 
@@ -427,10 +457,12 @@ Use job search and innovation examples; caution: too many weak ties can dilute c
 ## Key theories for managers (2/3)
 
 Structural Holes 
-— Burt
+
+- Burt
 - Gaps between groups with complementary info
 
 Brokers spanning holes gain advantages:
+
 - Access to non‑redundant information
 - Control over information flows
 - Creativity via recombination
@@ -446,6 +478,7 @@ Broker ≠ always hero; design robust brokerage via multiple bridges.
 ## Key theories for managers (3/3)
 
 Small‑world phenomenon
+
 - Short path lengths (“six degrees”) + local clustering
 - Enables rapid reach without losing cohesion
 
